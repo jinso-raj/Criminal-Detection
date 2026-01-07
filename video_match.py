@@ -18,7 +18,7 @@ embeddings = np.load(EMB_PATH)
 cap = cv2.VideoCapture(VIDEO_PATH)
 
 match_window = deque(maxlen=WINDOW_SIZE)
-alert_triggered = False
+alert_triggered = False 
 
 def min_distance(test_emb, ref_embeddings):
     distances = []
